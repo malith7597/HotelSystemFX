@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bPane1" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelsystemfx.Controller">
+   <center>
+      <AnchorPane prefHeight="502.0" prefWidth="428.0" style="-fx-background-color: #d9ecf2;" />
+   </center>
+   <left>
+      <AnchorPane fx:id="drawerPane1" prefHeight="502.0" prefWidth="300.0" style="-fx-background-color: White;" BorderPane.alignment="CENTER">
+         <children>
+              <AnchorPane layoutX="3.0" prefHeight="490.0" prefWidth="182.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0">
+               <children>
+                      <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="9.0" prefHeight="446.0" prefWidth="46.0" spacing="10.0" style="-fx-background-color: white;" AnchorPane.topAnchor="9.0">
+                          <children>
+                        <ImageView fitHeight="46.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@add.png" />
+                           </image>
+                        </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@bin.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@loading-bar.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@search.png" />
+                                  </image>
+                              </ImageView>
+                              <ImageView fitHeight="33.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@alphabetical-order.png" />
+                                  </image>
+                              </ImageView>
+                        <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bed2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@store.png" />
+                           </image>
+                        </ImageView>
+                          </children>
+                      </VBox>
+               </children>
+              </AnchorPane>
+            <VBox layoutX="54.0" layoutY="14.0" prefHeight="411.0" prefWidth="181.0" spacing="5.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" onAction="#addCustomers" prefHeight="38.0" prefWidth="179.0" text="Add Customer">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" onAction="#deleteCustomer" prefHeight="38.0" prefWidth="179.0" text="Delete Customer">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="58.0" prefHeight="38.0" prefWidth="179.0" text="Load Data" onAction="#loadData">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="106.0" onAction="#findCustomer" prefHeight="38.0" prefWidth="179.0" text="Find Customer">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="154.0" onAction="#ViewOrder" prefHeight="38.0" prefWidth="179.0" text="Order Guests">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="202.0" onAction="#btnViewAll" prefHeight="38.0" prefWidth="179.0" text="View Rooms">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="179.0" text="Store Data" onAction="#storeData">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+        <AnchorPane prefHeight="46.0" prefWidth="800.0" style="-fx-background-color: #002d40;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="drawerImage" layoutX="7.0" layoutY="7.0">
+                    <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icon-logo.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+              <AnchorPane fx:id="opacityPane" layoutX="-243.0" layoutY="-217.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6200EE;" AnchorPane.bottomAnchor="217.0" AnchorPane.leftAnchor="-243.0" AnchorPane.rightAnchor="243.0" AnchorPane.topAnchor="-217.0" />
+            <ImageView fitHeight="36.0" fitWidth="39.0" layoutX="752.0" layoutY="5.0" onMouseClicked="#btnExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cancel.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+   </top>
+</BorderPane>

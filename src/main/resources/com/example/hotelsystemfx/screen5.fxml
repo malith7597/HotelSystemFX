@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="312.0" prefWidth="590.0" style="-fx-background-color: #39adc4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelsystemfx.Controller">
+    <children>
+        <Label layoutX="203.0" layoutY="14.0" style="-fx-background-color: #39adc4;" text="Order Customers">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="orderAlphabetic" layoutX="200.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnOrder" prefHeight="26.0" prefWidth="143.0" text="Order A-Z" />
+        <ListView fx:id="listView2" layoutX="207.0" layoutY="49.0" prefHeight="170.0" prefWidth="130.0" />
+        <Label layoutX="127.0" layoutY="252.0" prefHeight="18.0" prefWidth="75.0" textFill="#dd0d0d">
+
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+    </children>
+
+</AnchorPane>
